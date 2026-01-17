@@ -1,4 +1,4 @@
-// Active navbar link on scroll
+// ===== ACTIVE NAVBAR ON SCROLL =====
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
 
@@ -7,7 +7,7 @@ window.addEventListener("scroll", () => {
 
   sections.forEach(section => {
     const sectionTop = section.offsetTop - 120;
-    if (scrollY >= sectionTop) {
+    if (window.scrollY >= sectionTop) {
       current = section.getAttribute("id");
     }
   });
@@ -17,5 +17,14 @@ window.addEventListener("scroll", () => {
     if (link.getAttribute("href") === `#${current}`) {
       link.classList.add("active");
     }
+  });
+});
+
+// ===== SMOOTH SCROLL (MOBILE SAFE) =====
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", e => {
+    e.preventDefault();
+    document.querySelector(anchor.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
   });
 });
