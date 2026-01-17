@@ -3,62 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>El Faraone Barber Shop</title>
+  <title>El Faraone Barber</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- NAVBAR -->
   <header class="header">
-    <div class="logo">El Faraone</div>
+    <h1>EL <span>FARAONE</span></h1>
     <nav>
-      <a href="#home">Home</a>
+      <a href="#home" class="active">Home</a>
       <a href="#services">Servizi</a>
-      <a href="#gallery">Galleria</a>
+      <a href="#about">Chi siamo</a>
       <a href="#contact">Contatti</a>
     </nav>
   </header>
 
   <!-- HERO -->
   <section id="home" class="hero">
-    <h1>Barberia <span>Tradizionale</span></h1>
-    <p>Tagli moderni, stile classico. Qualità vera.</p>
-    <a class="btn" href="#contact">Prenota su WhatsApp</a>
+    <h2>Barberia <span>Tradizionale</span></h2>
+    <p>
+      Tagli moderni, stile classico.  
+      Cura, precisione e rispetto della tradizione.
+    </p>
+    <a href="#contact" class="btn">Prenota ora</a>
   </section>
 
   <!-- SERVICES -->
   <section id="services" class="section">
     <h2>Servizi</h2>
+
     <div class="cards">
-      <div class="card">✂️ Taglio Uomo</div>
-      <div class="card">🧔 Barba & Rifinitura</div>
-      <div class="card">🔥 Fade & Styling</div>
+      <div class="card">
+        <h3>Taglio Uomo</h3>
+        <p>Tagli moderni e classici su misura.</p>
+      </div>
+
+      <div class="card">
+        <h3>Barba</h3>
+        <p>Rasatura e modellatura professionale.</p>
+      </div>
+
+      <div class="card">
+        <h3>Taglio + Barba</h3>
+        <p>Servizio completo con rifiniture.</p>
+      </div>
     </div>
   </section>
 
-  <!-- GALLERY -->
-  <section id="gallery" class="section dark">
-    <h2>Galleria</h2>
-    <div class="gallery">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+  <!-- ABOUT -->
+  <section id="about" class="section dark">
+    <h2>Chi siamo</h2>
+    <p>
+      El Faraone nasce dalla passione per la barberia.
+      Professionalità, igiene e stile per ogni cliente.
+    </p>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section">
     <h2>Contatti</h2>
     <p>📍 Italia</p>
-    <a class="btn whatsapp" href="https://wa.me/390000000000" target="_blank">
-      Scrivici su WhatsApp
+    <p>📞 +39 000 000 0000</p>
+    <p>🕒 Lun–Sab: 9:00 – 19:00</p>
+
+    <a href="https://wa.me/390000000000" class="btn outline">
+      WhatsApp
     </a>
   </section>
 
   <footer>
-    © 2026 El Faraone Barber Shop
+    © 2026 El Faraone Barber
   </footer>
 
   <script src="script.js"></script>
