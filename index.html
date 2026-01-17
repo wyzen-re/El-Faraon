@@ -70,13 +70,14 @@
     <form class="booking-form">
       <input type="text" placeholder="Nome" required />
       <input type="tel" placeholder="Telefono" required />
-
-      <select required>
-        <option value="">Seleziona servizio</option>
-        <option>Taglio Uomo</option>
-        <option>Barba</option>
-        <option>Taglio + Barba</option>
-      </select>
+      
+<select name="servizio" required>
+  <option value="" disabled selected>Seleziona servizio</option>
+  <option value="taglio">Taglio classico</option>
+  <option value="fade">Sfumatura / Fade</option>
+  <option value="barba">Barba</option>
+  <option value="taglio-barba">Taglio + Barba</option>
+</select>
 
       <input type="date" required />
 
