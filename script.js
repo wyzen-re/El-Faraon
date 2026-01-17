@@ -1,23 +1,20 @@
-// Smooth active nav on scroll
-const links = document.querySelectorAll("nav a");
+// Active navbar link on scroll
 const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
 
 window.addEventListener("scroll", () => {
   let current = "";
 
   sections.forEach(section => {
-    const top = window.scrollY;
-    const offset = section.offsetTop - 120;
-    const height = section.offsetHeight;
-
-    if (top >= offset && top < offset + height) {
+    const sectionTop = section.offsetTop - 120;
+    if (scrollY >= sectionTop) {
       current = section.getAttribute("id");
     }
   });
 
-  links.forEach(link => {
+  navLinks.forEach(link => {
     link.classList.remove("active");
-    if (link.getAttribute("href") === "#" + current) {
+    if (link.getAttribute("href") === `#${current}`) {
       link.classList.add("active");
     }
   });
